@@ -6,7 +6,8 @@
   "scripts": {
     "serve": "live-server public/",
     "build": "webpack",
-    "dev-server": "webpack-dev-server"
+    "dev-server": "webpack-dev-server",
+    "test": "jest"
   },
   "author": "Rei",
   "license": "ISC",
@@ -19,6 +20,7 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^3.4.2",
+    "jest": "^25.2.3",
     "live-server": "^1.2.1",
     "moment": "^2.24.0",
     "node-sass": "^4.13.1",
