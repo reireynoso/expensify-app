@@ -5,9 +5,9 @@ import AppRouter from './routers/AppRouter'
 import configureStore from './store/configureStore'
 import 'normalize.css/normalize.css';
 import './styles/styles.scss'
-import {addExpense} from './actions/expenses'
-import {setTextFilter} from './actions/filters'
-import visibleExpenses from './selectors/expenses'
+// import {addExpense} from './actions/expenses'
+// import {setTextFilter} from './actions/filters'
+// import visibleExpenses from './selectors/expenses'
 import 'react-dates/lib/css/_datepicker.css'
 
 const store = configureStore();
@@ -19,7 +19,6 @@ const store = configureStore();
 // console.log(store.getState().expenses, store.getState().filters)
 // let result = visibleExpenses(store.getState().expenses, store.getState().filters)
 // console.log(result);
-
 
 const jsx = (
     <Provider store={store}>
