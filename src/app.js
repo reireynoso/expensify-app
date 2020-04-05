@@ -11,9 +11,10 @@ import visibleExpenses from './selectors/expenses'
 import 'react-dates/lib/css/_datepicker.css'
 
 const store = configureStore();
-store.dispatch(addExpense({description: "water", amount: 800, createdAt: 14}))
-store.dispatch(addExpense({description: "gas", amount: 400, createdAt: 19}))
-store.dispatch(addExpense({description: "food", amount: 1400, createdAt: 10}))
+
+// store.dispatch(addExpense({description: "water", amount: 800, createdAt: 14}))
+// store.dispatch(addExpense({description: "gas", amount: 400, createdAt: 19}))
+// store.dispatch(addExpense({description: "food", amount: 1400, createdAt: 10}))
 // store.dispatch(setTextFilter("water"))
 // console.log(store.getState().expenses, store.getState().filters)
 // let result = visibleExpenses(store.getState().expenses, store.getState().filters)
