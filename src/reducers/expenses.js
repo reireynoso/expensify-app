@@ -8,7 +8,7 @@ const expensesReducer = (state = expensesReducerDefaultState, action) => {
             const newExpense = state.filter((expense) => expense.id !== action.id)
             return newExpense
         case "EDIT_EXPENSE":
-            console.log(action)
+            // console.log(action)
             return state.map((expense) => {
                 if(expense.id === action.id){
                     return {
