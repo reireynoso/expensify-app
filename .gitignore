@@ -2,3 +2,6 @@
 /yarn.lock
 /package-lock.json
 public/dist
+/src/firebase
+.env.development
+.env.test
