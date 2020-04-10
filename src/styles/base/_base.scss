@@ -1,5 +1,8 @@
 // rem -> better support for accessiblity
 // 1rem = 16px
+* {
+    box-sizing: border-box; //removes the space it needs for the border
+}
 
 html {
     font-size: 62.5%;
