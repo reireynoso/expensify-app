@@ -1,0 +1,28 @@
+.confirmation-component {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+}
+
+.confirmation-component__background {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: $dark-grey;
+    opacity: 0.5;
+    z-index: 2;
+}
+
+.confirmation-component__box {
+    position: relative;
+    z-index: 3;
+    margin: auto;
+    margin-top: 20rem;
+    width: 40rem;
+    height: 40rem;
+    background: $dark-blue;
+}
