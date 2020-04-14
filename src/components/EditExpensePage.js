@@ -28,7 +28,7 @@ export class EditExpensePage extends React.Component {
         <div>
             {
                 this.state.confirmation_on && <div className="confirmation-component">
-                    <div className="confirmation-component__background">
+                    <div onClick={() => this.onClick()} className="confirmation-component__background">
                     </div>
                     <div className="confirmation-component__box">
                         Confirm?
