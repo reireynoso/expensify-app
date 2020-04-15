@@ -28,12 +28,13 @@ export class EditExpensePage extends React.Component {
         <div>
             {
                 this.state.confirmation_on && <div className="confirmation-component">
-                    <div onClick={() => this.onClick()} className="confirmation-component__background">
-                    </div>
+                    
+                    
                     <div className="confirmation-component__box">
-                        Confirm?
-                        <button onClick={() => this.onClick()}>Cancel</button>
-                        <button onClick={() => this.onRemove()}>Remove</button>
+                        <h2 className="confirmation-component__box--title">Are you sure?</h2>
+                        <p>Removing Expense</p>
+                        <button className="button" onClick={() => this.onClick()}>Cancel</button>
+                        <button className="button button--remove" onClick={() => this.onRemove()}>Remove</button>
                     </div>
                 </div>
             }
