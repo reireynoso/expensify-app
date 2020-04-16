@@ -2,10 +2,11 @@ import React from 'react'
 import {connect} from 'react-redux'
 import ExpenseForm from './ExpenseForm'
 import {startEditExpense, startRemoveExpense} from '../actions/expenses'
+import Confirmation from './Confirmation'
 
 export class EditExpensePage extends React.Component {
     state = {
-        confirmation_on: true
+        confirmation_on: false
     }
     onSubmit = (expense) => {
         // props.dispatch(editExpense(props.expense.id, expense))
@@ -27,16 +28,7 @@ export class EditExpensePage extends React.Component {
         return(
         <div>
             {
-                this.state.confirmation_on && <div className="confirmation-component">
-                    
-                    
-                    <div className="confirmation-component__box">
-                        <h2 className="confirmation-component__box--title">Are you sure?</h2>
-                        <p>Removing Expense</p>
-                        <button className="button" onClick={() => this.onClick()}>Cancel</button>
-                        <button className="button button--remove" onClick={() => this.onRemove()}>Remove</button>
-                    </div>
-                </div>
+                this.state.confirmation_on && <Confirmation onConfirm={this.onClick}/>
             }
             <div className="page-header">
                 <div className="content-container">
