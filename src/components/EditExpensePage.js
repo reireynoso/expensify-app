@@ -28,7 +28,7 @@ export class EditExpensePage extends React.Component {
         return(
         <div>
             {
-                this.state.confirmation_on && <Confirmation onConfirm={this.onClick}/>
+                this.state.confirmation_on && <Confirmation onCancel={this.onClick} onConfirm={this.onRemove}/>
             }
             <div className="page-header">
                 <div className="content-container">
