@@ -6,17 +6,22 @@ import Confirmation from './Confirmation'
 
 export class EditExpensePage extends React.Component {
     state = {
-        confirmation_on: false
+        confirmation_on: true
     }
     onSubmit = (expense) => {
         // props.dispatch(editExpense(props.expense.id, expense))
         this.props.startEditExpense(this.props.expense.id, expense)
         this.props.history.push("/")
     }
-    onClick = () => {
-        this.setState((prevState) => ({
-            confirmation_on: !prevState.confirmation_on
-        }))
+    onClick = (e) => {
+        let container = document.querySelector('.confirmation-component__box');
+        console.log(e.target.className.includes("button"))
+    
+        if((container && !container.contains(e.target)) || e.target.className.includes("button")){
+            this.setState((prevState) => ({
+                confirmation_on: !prevState.confirmation_on
+            }))
+        }
     }
 
     onRemove = () => {
